@@ -14,25 +14,32 @@ I use inception-resnet-v2 instead of densnet121 ([CheXNet](https://arxiv.org/abs
 # result:
 I have also proposed a slightly-improved model which achieves a mean AUROC of **0.852**(v.s. 0.841 of the original [CheXNet](https://arxiv.org/abs/1711.05225)).
 
-           | Pathology | My Model | [CheXNet](https://arxiv.org/abs/1711.05225) | 
-           | ------------- | ------------- |
-           | Atelectasis  | 0.8296  | 0.8094 |
-           | Cardiomegaly  | 0.9046  | 0.9248 |
-           | Effusion  | 0.8850  | 0.8638 |
-           | Infiltration  | 0.7053  | 0.7345 |
-           | Mass  | 0.8729  | 0.8676 |
-           | Nodule | 0.8039 | 0.7802 |
-           | Pneumonia | 0.7876 | 0.7680 |
-           | Pneumothorax | 0.8920 | 0.8887 |
-           | Consolidation | 0.8299 | 0.7901 |
-           | Edema | 0.9171 | 0.8878 |
-           | Emphysema | 0.9131 | 0.9371 |
-           | Fibrosis | 0.8402 | 0.8047 |
-           | Pleural_Thickening | 0.8174 | 0.8062 |
-           | Hernia | 0.9370 | 0.9164 |
+| Pathology | My Model | [CheXNet](https://arxiv.org/abs/1711.05225) | 
+| ------------- | ------------- |
+| Atelectasis  | 0.8296  | 0.8094 |
+| Cardiomegaly  | 0.9046  | 0.9248 |
+| Effusion  | 0.8850  | 0.8638 |
+| Infiltration  | 0.7053  | 0.7345 |
+| Mass  | 0.8729  | 0.8676 |
+| Nodule | 0.8039 | 0.7802 |
+| Pneumonia | 0.7876 | 0.7680 |
+| Pneumothorax | 0.8920 | 0.8887 |
+| Consolidation | 0.8299 | 0.7901 |
+| Edema | 0.9171 | 0.8878 |
+| Emphysema | 0.9131 | 0.9371 |
+| Fibrosis | 0.8402 | 0.8047 |
+| Pleural_Thickening | 0.8174 | 0.8062 |
+| Hernia | 0.9370 | 0.9164 |
 
+## Requirement
 
+- Python 3.6+
+- Keras
+- Pandas
+- skimage
 
+## GPU and Computation time
+The training was done using single 1080 Ti GPU and took approximately 12h.
 
 
 
