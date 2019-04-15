@@ -2,7 +2,7 @@
 
 Diseases (14 diseases labels) Detection on Chest X-Rays image with Deep Learning (Convolutional Neural Network).
 
-
+<div align=center><img width="100" height="100" src="./X_ray/Chest_radiograph.jpg"/></div>
 
 # training:
 I randomly split the dataset into training (70%), validation (10%), and test (20%) sets (same [CheXNet](https://arxiv.org/abs/1711.05225)), but I use an initial learning rate of 0.0001(and the [CheXNet](https://arxiv.org/abs/1711.05225) use 0.001) that is decayed by a factor of 3 each time (for fast result) the validation loss plateaus after an epoch, and pick the model with the lowest validation loss.
