@@ -15,7 +15,7 @@ I use inception-resnet-v2 instead of densnet121 ([CheXNet](https://arxiv.org/abs
 I have also proposed a slightly-improved model which achieves a mean AUROC of **0.852**(v.s. 0.841 of the original [CheXNet](https://arxiv.org/abs/1711.05225)).
 
 | Pathology | My Model | [CheXNet](https://arxiv.org/abs/1711.05225) | 
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- | 
 | Atelectasis  | 0.8296  | 0.8094 |
 | Cardiomegaly  | 0.9046  | 0.9248 |
 | Effusion  | 0.8850  | 0.8638 |
