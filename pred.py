@@ -19,7 +19,7 @@ def main():
     use_best_weights = True
     output_weights_name = weights.h5
     weights_path = '
-    best_weights_path = os.path.join(output_dir, f"best_{output_weights_name}")
+    best_weights_path = './outputs/best_auroc.h5
 
     # get test sample count
     test_counts, _ = get_sample_counts(output_dir, "testt", class_names)
@@ -62,13 +62,12 @@ def main():
         steps=test_steps,
         shuffle_on_epoch_end=False,
     )
-
     print("** make prediction **")
     y_hat = model.predict_generator(test_sequence, verbose=1)
     y = test_sequence.get_y_true()
-    np.save('y_hat_test.npy',y_hat)
-    np.save('y_test.npy',y)
-    test_log_path = os.path.join(output_dir, "test.log")
+    np.save('y_hat_val.npy',y_hat)
+    np.save('y_val.npy',y)
+    test_log_path = "./outputs/val.log")
     print(f"** write log to {test_log_path} **")
     aurocs = []
     with open(test_log_path, "w") as f:
